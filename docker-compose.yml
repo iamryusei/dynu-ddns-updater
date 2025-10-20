@@ -1,0 +1,9 @@
+name: dynu-ddns-updater
+services:
+  dynu-ddns-updater:
+    container_name: dynu-ddns-updater
+    image: ghcr.io/iamryusei/dynu-ddns-updater:latest
+    restart: unless-stopped
+    env_file: 
+      - path: ./properties.env
+        required: true

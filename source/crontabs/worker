@@ -1,0 +1,1 @@
+*/$CROND_INTERVAL_MINUTES * * * * /home/worker/update-dynu-ddns.sh
