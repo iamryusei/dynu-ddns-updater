@@ -1,0 +1,13 @@
+name: dynu-ddns-updater
+services:
+  dynu-ddns-updater:
+    container_name: dynu-ddns-updater
+    image: iamryusei/dynu-ddns-updater:latest
+    restart: no
+    build:
+      context: .
+    env_file: 
+      - path: ./properties.env
+        required: true
+      - path: ./properties.override.env
+        required: false
